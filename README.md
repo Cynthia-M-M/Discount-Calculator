@@ -33,3 +33,97 @@ This is a simple Python script designed to calculate the final price of an item 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/Cynthia-M-M/Discount-Calculator.git](https://github.com/Cynthia-M-M/Discount-Calculator.git)
+   Here is the **rest of the README** to complete your Discount Calculator project.
+
+I have fixed the `git clone` command (removing the brackets) and added the **Usage Examples** so users can clearly see how the 20% rule works.
+
+### **Copy this block and paste it to finish your file:**
+
+```markdown
+   git clone https://github.com/Cynthia-M-M/Discount-Calculator.git
+
+```
+
+### 2. Navigate to the Folder
+
+```bash
+cd Discount-Calculator
+
+```
+
+### 3. Run the Program
+
+```bash
+python discount_calculator.py
+
+```
+
+---
+
+## 💻 Usage Examples
+
+Here is how the program behaves in two different scenarios:
+
+### Scenario A: High Discount (Applied)
+
+* **Original Price:** 1000
+* **Discount:** 25%
+* **Result:** Discount is applied.
+
+```text
+Enter the original price of the item: 1000
+Enter the discount percentage: 25
+The final price is: 750.00
+
+```
+
+### Scenario B: Low Discount (Not Applied)
+
+* **Original Price:** 1000
+* **Discount:** 10%
+* **Result:** Discount is ignored (less than 20%).
+
+```text
+Enter the original price of the item: 1000
+Enter the discount percentage: 10
+No discount applied. The original price is: 1000.00
+
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+Discount-Calculator/
+│
+├── discount_calculator.py   # Main script logic
+└── README.md                # Project documentation
+
+```
+
+---
+
+## 🧠 Code Logic
+
+The core logic relies on a simple function that decides whether to apply the math or return the original value:
+
+```python
+def calculate_discount(price, discount_percent):
+    if discount_percent >= 20:
+        discount_amount = (discount_percent / 100) * price
+        return price - discount_amount
+    else:
+        return price
+
+```
+
+---
+
+## 📄 License
+
+This project is open-source and created for educational purposes.
+
+```
+
+```
